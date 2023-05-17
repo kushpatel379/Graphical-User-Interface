@@ -1,0 +1,182 @@
+/*
+    Kush Patel
+    September 7, 2021
+    Assignment: First Web Page
+    This webpage is a informative webpage that states basic facts/videos about cheetahs and some information about myself.
+    This page specifically is about styling the webpage. Font color, background images, size of pictures, etc.
+*/
+
+body {
+  background-color: coral;      /*adds background color*/
+  background-image: url(../images/cheetaheyes.jpg);
+  background-repeat: no-repeat;       /*the background image doesnt repeat*/
+  background-size: 100% 15%;          
+}
+
+h1{
+  text-align: center;   /*places the header in the center of the page*/
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+h2{
+  margin-bottom: -10px;   /*decreases the margin for the header*/
+  text-decoration: underline;
+}
+
+h3{
+  margin-bottom: -10px;
+  text-decoration: underline;
+}
+
+a:link{
+  color:blue;  /*the color of the link is blue if it wasn't clicked on before*/
+}
+
+#pics:hover{
+  color:green;
+}
+
+a:hover{
+  color:green;   /*the color of the link goes to green when mouse goes over it*/
+}
+
+p{
+  font-size: 17px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid black;  /*created a border around the table*/
+}
+
+th {
+  border: 1px solid black;
+} 
+
+td {
+  border: 1px solid black;    /* table header and data both have a border*/
+}
+
+
+#tdnum1{
+  color:blue;     /*changes the text color of the third coloumn in the table to blue using id*/
+}
+
+#tdnum2{
+  color:blue;
+}
+
+#tdnum3{
+  color:blue;
+}
+
+#tdnum4{
+  color:blue;
+}
+
+#tdnum5{
+  color:blue;
+}
+
+#tdnum6{
+  color:blue;
+}
+
+iframe{     /*youtube video styling*/
+  width: 420px; 
+  height: 345px;
+  margin-left: 100px;
+  margin-right: 100px;    /*margins are added so the two videos are centered and spaced evenly*/
+}
+
+#link{
+  font-weight: bold;    /*makes link bold*/
+}
+
+img{
+    width: 500px; 
+    height:500px;
+    display: inline-block;
+    margin-left: 100px;       /*margins are added so the two photos under the introduction are centered and spaced evenly*/
+    margin-right: 100px;
+    text-align: center;
+}
+
+#pictures{
+  text-align:center;        /*centers the two pictures under the introduction*/
+}
+
+#titlev{
+  text-align: center;  
+  font-weight: bold;         
+  color:yellow;
+}
+
+#videos{
+  text-align: center;       /*centers the two videos*/
+}
+
+/*button{
+  background-color: black;    /* tyling for the button, no border around the button and the cursor is a pointer over the button*/
+/*  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  color: yellow;
+}*/
+
+#pics{
+  background-color: black;
+  color: orange;
+  padding: 9px 9px;
+}
+
+#animals{
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+#pronghorn{
+  width: 250px;
+  height: 250px;
+}
+
+#lion{
+  width: 250px;
+  height: 250px;
+}
+
+#kangaroo{
+  width: 250px;
+  height: 250px;
+}
+
+#favorites{
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+}
+
+#jaylen{
+  width: 250px;
+  height: 250px;
+}
+
+#uml{
+  width: 250px;
+  height: 250px;
+}
+
+#vegas{
+  width: 250px;
+  height: 250px;
+}
+
+

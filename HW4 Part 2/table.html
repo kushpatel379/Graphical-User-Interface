@@ -1,0 +1,90 @@
+<!--
+    Kush Patel
+    October 29, 2021
+    Assignment: Sliders and Tab Widgets
+    This assignment is about creating a user input page where it accepts the values and creates a multiplication table. The div inputs is
+    form created to accept the values. The html is the same from the previous assignment except I added the jquery validation plugin link.
+    I added more divs for buttons, headers, and messges. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Multiplication Table</title>
+    <link href="./css/table.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jqueryUiTheme.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <h1> Multiplication Table</h1>
+    </header> <br>
+
+    <div id = "inputs">
+        <form id="inputs2">
+                <label for = "MinHorizontal"> Minimum Number for Horizontal: </label> 
+                <input type="text" id="MinHorizontal" value = "1" name="MinHorizontal"required><br><br>
+                <div class="slider mySlider" id="MinHorizontalSlider" ></div><br>
+
+                <label for = "MaxHorizontal"> Maximum Number for Horizontal: </label> 
+                <input type="text" id="MaxHorizontal" value= "10"name="MaxHorizontal"required><br><br>
+                <div class="slider mySlider" id="MaxHorizontalSlider" ></div><br>
+
+                <label for = "MinVertical"> Minimum Number for Vertical: </label> 
+                <input type="text" id="MinVertical" value = "1" name="MinVertical"required><br><br>
+                <div class="slider mySlider" id="MinVerticalSlider" ></div><br>
+
+                <label for = "MaxVertical"> Maximum Number for Vertical: </label> 
+                <input type="text" id="MaxVertical" value = "10" name="MaxVertical" required><br><br>
+                <div class="slider mySlider" id="MaxVerticalSlider" ></div><br>
+
+                <button type="submit" id ="Button" >Click me</button>
+                <button  id ="save" >Save</button> <br> <br>
+
+        </form>
+
+
+    </div>
+
+    
+
+    <p id = "accept"></p>
+    <p id = "ok"> </p>
+
+    <div id = "swap"></div> <br>
+
+    <div id = "table"> </div>
+
+
+
+    <div id = "tabs">
+        <h2> Saved Tables </h2>
+        <p id = "exists"> </p> <br>
+    </div> 
+
+    <div id = "delete">
+        <button id = "all"> Delete Tabs </button> <br> <br>
+    </div>
+
+    <p id = "dontAllow"></p>
+
+    <div id = "savedTables" class= "ui-tabs">
+        <ul class= "ui-tabs-nav"> </ul>
+    </div><br><br>
+
+    <div id = "oldTables"> </div> <br> <br>
+
+    <script defer src="./js/table.js"></script>
+
+
+</body>
+</html>

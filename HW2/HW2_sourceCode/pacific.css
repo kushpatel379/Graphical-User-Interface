@@ -1,0 +1,142 @@
+/*
+    Kush Patel
+    September 16, 2021
+    Assignment: Style a Site with External CSS
+    This webpage is a informative webpage that is about a resort that someone can visit. This CSS page is specifiacally about
+    styling the page to look like the professor's given screenshots of the page. We had to add a set width to the page, styling the 
+    nav bar, wrapping the words around the image, and much more. 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*will absorb any padding you add so the padding doesnt go over the boxes*/
+}
+
+body {
+  background-image: url(ptrbackground.jpg), linear-gradient(white, #00569f); /*adds a color gradient to the backgrounf image*/
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*main area of the page where everthing resides in*/
+#wrapper {
+  width: 80%;
+  min-width: 600px;
+  margin: auto;
+  margin-top: 25px;
+  max-width: 1080px;
+  background-color: lightblue;
+}
+
+header {
+  height: 80px; /*sets the height and width of the header*/
+  width: 100%;
+  background-color: #000032;
+  background-image: url(sunset.jpg);
+  background-repeat: no-repeat; /*background image will not repeat*/
+  background-size: 30% 100%;
+  background-position-x: right; /*sets the background image to the right*/
+}
+
+header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: white;
+  margin-bottom: 0; /*no header to the bottom margin*/
+  padding: 10px;
+  font-size: 45px;
+}
+
+nav {
+  float: left;
+  background-color: lightblue;
+  color: darkblue;
+  width: 50px;
+  height: 80%; /*sets width/height to the nav bar, and adds padding*/
+  padding: 6px;
+  padding-top: 25px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.5em; /*1 em = 2in of font size*/
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+nav a:visited {
+  color: #344873; /*link turns to this color when visited*/
+}
+
+nav a:hover {
+  color: #ffffff; /*link turns white when moving cursor over it*/
+}
+
+nav a {
+  text-decoration: none; /*removes underline and other decoration from the links in the nav*/
+  color: rgb(7, 6, 122);
+}
+
+#content {
+  background-color: white;
+  max-width: 80%;
+  margin-left: 240px;
+  padding: 2% 4%;
+  list-style-image: url(marker.gif); /* the gif that used for the list style*/
+  font-size: 18px;
+  word-wrap: break-word; /* breaks the words down if it will overflow the boundary*/
+}
+
+#content ul li {
+  list-style: none;
+}
+
+#content ul li::before {
+  content: " "; /*adds space before the bullet point so it can be lined up with the rest of the paragraph*/
+  height: 10px;
+  width: 10px;
+  background-image: url(marker.gif);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+#content p {
+  width: auto;
+  margin-bottom: 18px;
+  text-align: justify; /*space is added between words so the line edges can be matched up with the margins*/
+}
+
+img {
+  margin-right: 25px;
+  margin-top: 15px;
+  float: left; /*moves the image to the left and keeps it there*/
+  width: 420px;
+}
+
+#content h2 {
+  color: #3399cc;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+  margin-top: 22px;
+  font-size: 90%;
+}
+
+dt {
+  color: #000033;
+}
+
+.resort {
+  color: rgb(54, 147, 184);
+  font-weight: bold;
+}
+
+footer {
+  background-color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  padding-bottom: 107px;
+  margin-left: 240px; /*sets width/margin and adds padding to the footer*/
+  max-width: 80%;
+  padding: 2% 4%;
+}

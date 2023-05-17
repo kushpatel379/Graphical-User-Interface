@@ -1,0 +1,112 @@
+/*
+    Kush Patel
+    September 29, 2021
+    Assignment: Creating an Interactive dynamic table. 
+    This assignment is about creating a user input page where it accepts the values and creates a multiplication table. The CSS pages 
+    specifically designs the page and table. I have specifically targeted the first column and row and styled it. 
+*/
+
+body {
+  background-color: rgb(255, 174, 0);
+  margin:auto;
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  background-image: url(../Images/math.jpg); /*adds background image to the top*/
+  background-size: 100% 100%;
+  font-weight: bold;
+  color: rgb(255, 174, 0);
+}
+
+input{
+  border-radius: 30px;
+  padding: 5px;     /* adds padding and radius around the number form*/
+}
+
+input:hover{
+  color: red;
+}
+
+#inputs{
+  text-align: center;
+}
+
+#inputs2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#Button{
+  box-shadow:0 5px rgb(59, 45, 45);  /* adds a shadow under the button*/
+  text-align: center;
+  cursor: pointer;
+}
+
+#Button:active{
+  box-shadow: 0 2px rgb(70, 62, 62);
+  transform: translateY(4px); /*the button does down and than back up when clicked*/
+}
+
+#table {
+  width: auto;
+  height: 305px;
+  overflow: scroll;   /*adds a scroll to the table*/
+  overflow-y: scroll;
+  position: relative;
+}
+
+td {
+  border: 1px solid black;
+}
+
+
+tr:first-child{
+  background-color: black;    /*adds background color and font color to the first row*/
+  color:white;
+  position: sticky;
+  top: 0px;
+}
+
+th{
+  background-color: black;
+  color:white;
+}
+
+td:first-child{
+  background-color: black;    /*adds background color and font color to the first column*/
+  color:white;
+  position:sticky;
+  left:0px;
+}
+
+tr:nth-child(even):not(:first-child){
+  background-color: aqua;     /*adds background color and font color to the multiplication cell values, every even row except the first row*/
+  color: black;
+}
+
+tr:nth-child(odd):not(:first-child){
+  background-color: rgb(41, 194, 194);   /*adds background color and font color to the multiplication cell values, every odd row except the first row*/
+  color: black;
+}
+
+/*headcell{
+  color: white;
+  background-color: red;
+  position: sticky;
+  left: 0px;
+}*/
+
+#accept{
+  color: red;
+  font-size: 25px;        /* adds styling for the error message*/
+  text-decoration: underline;
+}
+
+#ok{
+  color: red;
+  font-size: 25px;
+  text-decoration: underline;
+}

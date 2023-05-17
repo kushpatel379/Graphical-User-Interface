@@ -1,0 +1,58 @@
+<!--
+    Kush Patel
+    September 16, 2021
+    Assignment: Creating an Interactive dynamic table.
+    This assignment is about creating a user input page where it accepts the values and creates a multiplication table. The div inputs is
+    form created to accept the values. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Multiplication Table</title>
+    <link href="./css/table.css" rel="stylesheet">
+    
+
+    
+</head>
+
+
+<body>
+
+    <header>
+        <h1> Multiplication Table</h1>
+    </header> <br>
+
+    <div id = "inputs">
+        <div id = "inputs2">
+            <label for = "MinHorizontal"> Minimum Number for Horizontal: </label> 
+            <input type="number" id="MinHorizontal" value= "-50" name="MinHorizontal"><br><br>
+
+            <label for = "MaxHorizontal"> Maximum Number for Horizontal: </label> 
+            <input type="number" id="MaxHorizontal" value= "50"  name="MaxHorizontal"><br><br>
+
+            <label for = "MinVertial"> Minimum Number for Vertical: </label> 
+            <input type="number" id="MinVertical" value= "-50"  name="MinVertical"><br><br>
+
+            <label for = "MaxVertical"> Maximum Number for Vertical: </label> 
+            <input type="number" id="MaxVertical" value= "50"  name="MaxVertical"><br><br>
+
+        </div>
+
+        <form>
+            <input id = "Button" type= "button" onclick= "createTable()"  value = "Create Table">
+        </form>
+
+    </div>
+
+    <p id = "accept"></p>
+    <p id = "ok"> </p>
+
+    <div id = "table">
+    </div>
+
+    <script src="./js/table.js"></script>
+
+
+</body>
+</html>

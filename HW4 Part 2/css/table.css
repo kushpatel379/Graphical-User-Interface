@@ -1,0 +1,252 @@
+/*
+    Kush Patel
+    October 29, 2021
+    Assignment: Sliders and Tab Widgets
+    This assignment is about creating a user input page where it accepts the values and creates a multiplication table. The CSS pages 
+    specifically designs the page and table. I have specifically targeted the first column and row and styled it. For this assignment,
+    I have styled the sliders, tab, buttons, and other text and messages that pop up. 
+*/
+
+body {
+    background-color: rgb(255, 174, 0);
+    margin:auto;
+    margin-bottom: auto;
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background-image: url(../images/math.jpg); /*adds background image to the top*/
+    background-size: 100% 100%;
+    font-weight: bold;
+    color: rgb(255, 174, 0);
+  }
+  
+  input{
+    border-radius: 30px;
+    padding: 0px;     /* adds padding and radius around the number form*/
+  }
+  
+  input:hover{
+    color: red;
+  }
+  
+  #inputs{
+    text-align: center;
+  }
+  
+  #inputs2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  
+  #Button{
+    box-shadow:0 5px rgb(59, 45, 45);  /* adds a shadow under the button*/
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #Button:hover{
+    color: red;
+  }
+  
+  #Button:active{
+    box-shadow: 0 2px rgb(70, 62, 62);
+    transform: translateY(4px); /*the button does down and than back up when clicked*/
+  }
+
+  #save{
+    box-shadow:0 5px rgb(59, 45, 45);  /* adds a shadow under the button*/
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #save:hover{
+    color: red;
+  }
+  
+  #save:active{
+    box-shadow: 0 2px rgb(70, 62, 62);
+    transform: translateY(4px); /*the button does down and than back up when clicked*/
+  }
+  
+  #swap{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+  }
+
+  #table {
+    margin: auto;
+    height: 233px;
+    overflow: auto;   /*adds a scroll to the table */
+    position: relative;
+    width: 100%;
+  }
+
+  #oldTables {
+    margin: auto;
+    height: 233px;
+    overflow: auto;   /*adds a scroll to the table */
+    position: relative;
+    width: 100%;
+  }
+
+  table{
+    margin: auto;
+    /* margin-bottom: auto; */
+  } 
+  
+  td {
+    border: 1px solid black;
+  }
+  
+  
+  tr:first-child{
+    background-color: black;    /*adds background color and font color to the first row*/
+    color:white;
+    position: sticky;
+    top: 0px;
+  }
+  
+  th{
+    background-color: black;
+    color:white;
+  }
+  
+  td:first-child{
+    background-color: black;    /*adds background color and font color to the first column*/
+    color:white;
+    position:sticky;
+    left:0px;
+  }
+  
+  tr:nth-child(even):not(:first-child){
+    background-color: aqua;     /*adds background color and font color to the multiplication cell values, every even row except the first row*/
+    color: black;
+  }
+  
+  tr:nth-child(odd):not(:first-child){
+    background-color: rgb(41, 194, 194);   /*adds background color and font color to the multiplication cell values, every odd row except the first row*/
+    color: black;
+  }
+  
+  /* #accept{
+    color: red;
+    font-size: 25px;        adds styling for the error message
+    text-decoration: underline;
+  }
+  
+  #ok{
+    color: red;
+    font-size: 25px;
+    text-decoration: underline;
+  }  */
+
+  label.error{
+      color: red;
+      font-style: italic;
+  }
+
+  .slider{
+    width:400px;
+    height:15px; 
+    position: relative;                       /*styling for the slider bar*/
+    margin: auto;
+    background: #3bc4af !important;
+    border-radius: 50px !important;               /* rounds the edges of the bar*/
+  }
+
+  .ui-slider-handle{
+    background: black !important;
+    cursor: grab !important;
+    border-radius: 50px !important;               /* rounds out the slider */
+  }
+
+  .ui-slider-handle:active{
+    cursor: grabbing !important;          /*grabbing animation when moving slider*/
+  }
+
+  #tabs{
+    text-align: center;
+    font-size: 30px;
+    color:blueviolet;                   /*styles the saved tables header*/
+    text-decoration: underline;
+    margin: auto;
+  }
+
+  #exists{
+    color: black;
+    font-size: 20px;                      /* styles message that appears when a table that is already saved is saved again*/
+    text-decoration: underline;
+    cursor: default;
+  }
+
+  .ui-tabs-nav{
+    display: flex !important;                       /*displays the tab nav horizontally*/
+    background: violet !important;
+  }
+
+  .ui-tabs-nav li{
+    float: none !important;
+  }
+
+  .ui-tabs-nav button{
+    background: red;
+    border-radius: 20px;              /*styles the tabs of the saved tables*/
+    padding: 5px;
+    margin: auto !important;
+  }
+
+  .ui-tabs {
+    background: purple !important; 
+    /* width: 1500px;   */                        /*styles in what the nav bar and tabs are placed in*/
+    width: auto !important;
+    margin: auto !important;
+  } 
+
+  #delete{
+    text-align: center; /*centers delete tabs button*/
+  }
+  
+  p{
+    padding: 0px;
+    margin: auto;
+    text-align: center;           /*styles the x under the tabs of saved tables*/
+    cursor: pointer;
+    color: teal;
+    font-weight: bold;
+  }
+
+  #dontAllow{
+    text-align: center;
+    color: teal;                      /*styles message if more than 8 tables are tried to save*/
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #all{
+    box-shadow:0 5px rgb(59, 45, 45);  /* adds a shadow under the button*/
+    border-radius: 0px;
+    text-align: center;
+    width: 100px;                         /*styles the delete tabs button*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    background: lightblue;
+  }
+
+  #all:hover{
+    color: red;               /* text inside button turns red when hovering mouse over it*/
+  }
+  
+  #all:active{
+    box-shadow: 0 2px rgb(70, 62, 62);
+    transform: translateY(4px); /*the button does down and than back up when clicked*/
+  }
+
+
+  
