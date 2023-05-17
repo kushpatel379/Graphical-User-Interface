@@ -1,0 +1,636 @@
+/*
+File: kush_style.css
+
+Authors: Kush Patel
+
+Description: CSS file for Kush's CSS documentation.
+
+Example Naming Style:
+
+.tynan-navbar-color {
+    background-color: #49beb7;
+}
+
+/*Please try and indicate what is yours by putting your name in the names of classes. This way it's easiest to track down issues. 
+
+Credit:
+*/
+
+#profile{
+    margin-left: 550% !important;
+    margin-top: 19% !important;
+}
+
+#name{
+    color: black;
+    font-size: 3.5vw !important;
+    margin-left: 170%;
+    margin-top: -20% !important;
+}
+
+#notifications{
+    margin-left:675%;
+    margin-top: -40% !important;
+}
+
+#messages{
+    margin-left: 695%;
+    margin-top: -40% !important;
+
+}
+
+#logoutPic{
+    margin-left:715%;
+    margin-top: -40% !important;
+
+
+}
+
+.kush-navbar-color{
+    /* position: absolute;
+    margin-left: -8px; */
+    background-color: rgb(73, 190, 183);
+    color: rgb(73, 190, 183);
+    height: 4em;
+    width: 100%;
+}
+
+.card-title{
+    z-index: 1;
+    color: black;
+}
+
+#kush_yourName{
+    color: black;
+    z-index: 1;
+
+}
+
+.text-end{
+    /* height: 50px; */
+    height: 3.5rem;
+    /* background-color: aqua; */
+}
+
+
+
+.kush-button-hover:hover{
+    cursor: pointer;
+}
+ 
+#search{
+    /* position: absolute; */
+    /* margin-top: -15px; */
+    /* margin-left: 100px; */
+    /* height: 56px;*/
+    width: 250%;
+    border-radius: 35px;
+    z-index: 1;
+    
+}
+ 
+
+
+h3{
+    font-size: 40%;
+}
+
+
+#logo{
+    cursor: pointer;
+    width: auto;
+    max-width: 100px;
+    /* margin-top: -15px; */
+}
+
+/* #dropdown{
+    position: absolute;
+    margin-top: -37px;
+    margin-left: -37px;
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    z-index: -1;    
+
+} */
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    height: 260%;
+    margin-left: 19.3%;
+    margin-top: -8% !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownLast a:hover {background-color: #ddd;}
+  
+
+  #logout{
+      float:right;
+      font-weight: bold;
+      font-size: 25px;
+      margin-top: 120px;
+      margin-right: 30px;
+      padding: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-radius: 20px;
+      border-radius: 20px;
+      background-color: rgb(226,240,255);
+      box-shadow: 0px 2px 2px 3px rgba(1, 1, 1, 0.219);
+  }
+
+  #logout:hover{
+      background-color: rgb(157, 193, 231) ;
+  }
+
+.message-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 39%;
+    height: 625%;
+    margin-left: 11%;
+    margin-top: 11.5% !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.message-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#messageBar{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(248, 244, 244);
+    width: 272px;
+    height: 60px;
+}
+
+#goBack{
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    margin-left: -136px;
+}
+
+#goBack:hover{
+    cursor: pointer;
+}
+
+#friend{
+    position: absolute;
+    color: black;
+    font-size: 36px;
+    margin-left: 60px;
+    margin-top: 8px;
+    
+}
+
+#messageBox{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(248, 244, 244);
+    width: 272px;
+    height: 60px;
+    margin-top: 50px;
+}
+
+#searchMessages{
+    font-size: 22px;
+    position: absolute;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: -136px;
+    width: 272px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#friend1{
+    background-color: rgb(222,222,222);
+    position: absolute;
+    margin-top: 110px;
+    width: 272px;
+    height: 80px;
+}
+
+#friendOne{
+    color: black;
+    font-size: 24px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+#dateOne{
+    font-size: 18px;
+    color: black;
+    margin-top: -50px;
+    margin-left: 200px;
+}
+
+#textBox{
+    position: absolute;
+    background-color: rgb(220, 220, 220);
+    margin-left: 272px;
+    height: 450px;
+    width: 328px;
+
+}
+
+#typeMessage{
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    width: 328px;
+    height: 50px;
+    margin-left: -28px;
+    margin-top: 400px;
+    border: 1px solid black;
+}
+
+#send{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    margin-left: 254px;
+    margin-top: 402px;
+}
+
+#send:hover{
+    cursor: pointer;
+}
+
+
+#compose{
+    position: absolute;
+    margin-left: 85px;
+    height: 60px;
+    width: 60px;
+}
+
+#compose:hover{
+    cursor: pointer;
+
+}
+
+
+.notification-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 22.5%;
+    height: 700%;
+    margin-left: 33% !important;
+    /*margin-top: -82px !important; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#notificationsTab{
+    position: absolute;
+    font-size: 20px;
+    text-decoration: underline pink;
+    /* margin-top: 1px;
+    margin-left: 4px; */
+}
+
+#exitNoti{
+    position: absolute;
+    height:35px;
+    width: 35px;
+    /* margin-top: 1px;*/
+    margin-left: 138px; 
+}
+
+#exitNoti:hover{
+    cursor: pointer;
+}
+   
+.notification-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.flex-line{
+    display: flex;
+    /* font-size: 36px;
+    color: black;
+    font-weight: bold; */
+}
+
+#horizontalLineLeft{ 
+    border-bottom: 4px solid rgba(0, 0, 0, 0.25);
+    width: 60%; 
+    /* margin-left: 15px; */
+    /* margin-top: 250px !important;  */
+}
+ 
+ 
+  #cancel{
+      float:right;
+      font-size: 25px;
+      font-weight: bold;
+      font-weight: bold;
+      margin-top: 120px;
+      margin-right: 50px;
+      padding: 10px;
+      border-radius: 20px;
+      padding-left: 25px;
+      padding-right: 25px;
+      box-shadow: 0px 2px 2px 3px rgba(1, 1, 1, 0.219);
+  }
+
+  #cancel:hover{
+      background-color: rgb(158, 155, 155);
+  }
+
+#notifications, #messages, #logoutPic{
+    height: 4rem;
+    width: 4rem;
+}
+   
+#online{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.container-fluid{
+    display: flex;
+}
+
+.box{
+    /* border: 1px solid black; */
+    /* height: 595px; */
+}
+
+.left{
+    flex: 1;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.middle{
+    flex:2.5;
+    /* background-color: yellow; */
+}
+
+.right{
+    flex: 1;
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+
+}
+
+.box1{
+    height: 42%;
+}
+
+.box2{
+    /* overflow-y: scroll; */
+    height: 80%;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.55); */
+    align-content: center;
+    /* background-color: aqua; */
+}
+
+.box3{
+    height: 50%;
+}
+
+.box5{
+    /* display: inline-block; */
+}
+
+
+
+#inviteBox{
+    display: flex;
+    /* background-color: blue; */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.55); */
+    justify-content: space-between;
+
+}
+
+#invite{
+    background-color: rgb(226,240,255);
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    /* width: px; */
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#invite:hover{
+    cursor: pointer;
+    background-color: rgb(127, 147, 168);
+}
+
+#topSpace{
+    /* height: 90px; */
+    height: 3rem;
+    /* height: 20%; */
+}
+
+#space{
+    height: 3%;
+    /* background-color: aqua; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+
+}
+
+#spaceOnline{
+    height: 1rem;
+}
+
+#spaceTL{
+    height: 2%;
+}
+
+#infoPic, #infoPicTL, #blpic{
+    height: 3rem;
+    width: 3rem;
+}
+  
+#quickInfo{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 5%;
+    /* background-color: yellow; */
+}
+
+#spaceJourney{
+    height: 2rem;
+}
+
+#otherJourneys{
+    text-align: center;
+    font-size: 1.2rem;
+    /* background-color: red; */
+}
+
+#aboveMap{
+    /* background-color: green; */
+    /* height: 50px; */
+}
+
+#simpleInfo{
+    font-size: 0.4em;
+    /* background-color: red; */
+}
+
+#mapHolder{
+    /* overflow-y: scroll; */
+    margin: auto;
+    /* display: block; */
+    /* text-align: center; */
+    /* align-content: center;
+    text-align: center; */
+    /* align-items: center; */
+    display: flex;
+    /* background-color: aqua; */
+    width: 90%;
+}
+
+#map{
+    margin: auto;
+    /* overflow-y: scroll; */
+
+    /* text-align: center; */
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    /* background-color: black; */
+    /* align-content: center; */
+}
+
+#example{
+    margin: auto;
+    height: 67%;
+    width: 58%;
+    /* float:inline-end; */
+}
+
+#directionsBox{
+    overflow: auto;
+    /* margin: auto; */
+    /* background-color: blue !important; */
+    /* width: 25%; */
+    width: 55%;
+    z-index: 1;
+    font-size: 30%;
+
+}
+
+#itemList{
+    margin: auto;
+    /* background-color: red; */
+    /* height: 10%; */
+}
+
+#checkList{
+    margin-right:auto;
+    margin-left: auto;
+}
+
+#test{
+    color: white;
+}
+
+#messagesSide{
+    text-align: center;
+    height: 4.3em;
+    /* background-color: black; */
+}
+
+#friendsButton{
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 55%;
+    height: 95%;
+    border-radius: 25px;
+    box-shadow: 0px 3px 0px 0px #888888;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: -1;
+    
+}
+
+/* #Insidespace{
+    
+    color: blue;
+    width: 5%;
+    z-index: 1;
+} */
+
+#picFriend{
+    height: 2em !important;
+    width: 2em !important;
+    /* padding-right: 20%; */
+}
+
+#exitPic{
+    height: 2em;
+    width: 2em;
+}
+
+#addfriend{
+    background-color: aqua;
+}
+
+#add{
+    /* background-color: black; */
+    text-align: center;
+}
+
+#acceptYes{
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0px 3px 0px 0px #888888;
+
+}
+
+#acceptYes:hover{
+    background-color: aliceblue;
+}
+
+#acceptNo{
+    margin-left: 10%;
+    padding: 1rem;
+    box-shadow: 0px 3px 0px 0px #888888;
+}
+
+#acceptNo:hover{
+    background-color: aliceblue;
+
+}
+
+.show {
+    display: block !important;
+} 

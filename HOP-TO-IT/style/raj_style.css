@@ -1,0 +1,40 @@
+/*
+File: raj_style.css
+
+Authors: Raj Vekeria
+
+Description: CSS file for Raj's CSS documentation.
+
+Example Naming Style:
+
+.tynan-navbar-color {
+    background-color: #49beb7;
+}
+
+Please try and indicate what is yours by putting your name in the names of classes. This way it's easiest to track down issues. 
+
+Credit:
+*/
+#googleMap {
+  height: 500px;
+}
+.raj-home-info {
+  background-color: rgb(255, 255, 255);
+}
+#temp-account_map {
+  background-image: url("../assets/map2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover
+}
+.online_status_img {
+  width: 20px;
+}
+.offline_status_img {
+  width: 17px;
+}
+.card {
+  background-color: rgb(253, 253, 253);
+}
+.itemcon {
+  background-color: rgb(162, 142, 209);
+}
